@@ -1,0 +1,33 @@
+<div class="calculator-container">
+  <!-- Ekran: işlem ve sonuçlar burada gösterilecek -->
+  <div class="display">{{ currentInput || '0' }}</div>
+
+  <!-- Tuşlar: grid içinde tüm butonlar -->
+  <div class="buttons">
+    <!-- İlk satır -->
+    <button (click)="clear()">C</button>
+    <button (click)="delete()">⌫</button>
+    <button (click)="appendOperator('/')">÷</button>
+    <button (click)="appendOperator('*')">×</button>
+
+    <!-- Rakamlar ve işlemler -->
+    <button (click)="appendNumber('7')">7</button>
+    <button (click)="appendNumber('8')">8</button>
+    <button (click)="appendNumber('9')">9</button>
+    <button (click)="appendOperator('-')">−</button>
+
+    <button (click)="appendNumber('4')">4</button>
+    <button (click)="appendNumber('5')">5</button>
+    <button (click)="appendNumber('6')">6</button>
+    <button (click)="appendOperator('+')">+</button>
+
+    <button (click)="appendNumber('1')">1</button>
+    <button (click)="appendNumber('2')">2</button>
+    <button (click)="appendNumber('3')">3</button>
+    <button class="equal-btn" rowspan="2" (click)="calculate()">=</button>
+
+    <button class="zero-btn" colspan="2" (click)="appendNumber('0')">0</button>
+    <button (click)="appendDot()">.</button>
+  </div>
+</div>
+
