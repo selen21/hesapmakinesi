@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { TwoDigitPipe } from './pipes/two-digit.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    TwoDigitPipe
   ],
   imports: [
     BrowserModule

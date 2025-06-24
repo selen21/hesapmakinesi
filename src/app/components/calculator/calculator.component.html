@@ -1,6 +1,6 @@
 <div class="calculator-container">
   <!-- Ekran: işlem ve sonuçlar burada gösterilecek -->
-  <div class="display">{{ currentInput || '0' }}</div>
+  <div class="display">{{ currentInput ? (currentInput | twoDigit) : '00' }}</div>
 
   <!-- Tuşlar: grid içinde tüm butonlar -->
   <div class="buttons">
@@ -31,3 +31,10 @@
   </div>
 </div>
 
+<!-- SON 5 İŞLEM BURAYA EKLENİYOR -->
+<div class="history">
+  <h3>Son 5 İşlem</h3>
+  <ul>
+    <li *ngFor="let item of history">{{ item }}</li>
+  </ul>
+</div>

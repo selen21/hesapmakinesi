@@ -10,7 +10,7 @@ export class CalculatorComponent {
   currentInput: string = '';
 
   constructor(private historyService: HistoryService) {}
-  
+
   appendNumber(num: string): void {
     if (this.currentInput === '0') {
       this.currentInput = num;
@@ -70,11 +70,13 @@ export class CalculatorComponent {
 
       // İşlemi history servise ekle
       this.historyService.addToHistory(this.currentInput + ' = ' + result);
-
       this.currentInput = result.toString();
     } catch (error) {
       this.currentInput = 'Hata!';
     }
   }
-}
 
+  get history(): string[] {
+    return this.historyService.getHistory();
+  }
+}
