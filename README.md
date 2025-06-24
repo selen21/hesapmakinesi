@@ -17,9 +17,7 @@ Ayrıca yapılan son 5 işlem bir serviste saklanır ve sayılar özel pipe ile 
 
 ## Görseller
 
-![Uygulama Görseli](./screenshots/uygulama-gorseli.png)
-
-> Görseli `screenshots` klasörü açarak içine ekleyebilirsin.
+![Uygulama Görseli](./screenshots/calculator_screenshot.png)
 
 ---
 
