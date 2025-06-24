@@ -1,27 +1,31 @@
-# Hesapmakinesi
+# Angular Hesap Makinesi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Bu proje, Angular kullanarak geliştirilmiş basit bir hesap makinesidir.  
+Toplama, çıkarma, çarpma ve bölme işlemleri yapabilir.  
+Ayrıca yapılan son 5 işlem bir serviste saklanır ve sayılar özel pipe ile iki basamaklı gösterilir.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Kullanılan Teknolojiler
 
-## Code scaffolding
+- Angular (v16+)
+- TypeScript
+- SCSS (responsive destekli)
+- RxJS (temel düzeyde)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Görseller
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Uygulama Görseli](./screenshots/uygulama-gorseli.png)
 
-## Running unit tests
+> Görseli `screenshots` klasörü açarak içine ekleyebilirsin.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Kurulum ve Çalıştırma
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Bu repoyu klonlayın:
+   ```bash
+   git clone https://github.com/selen21/hesapmakinesi.git
+   cd hesapmakinesi
